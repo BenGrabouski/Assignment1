@@ -1,0 +1,101 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(87, 90, 255);
+    padding: 5px;
+    text-align: center;
+    font-size: 25;
+    grid-area: header;
+}
+
+
+nav{
+    background-color: #4278f5;
+    padding: 20px;
+    grid-area: nav;
+    font-family: 'Montserrat', sans-serif;;
+    color: black;
+    text-align: center;
+}
+
+
+
+nav li{
+    font-family: 'Montserrat', sans-serif;;
+    padding: 15px;
+    width: 10em;
+    background-color: aliceblue;
+    border: black, 10em;
+    border-radius: 5em;
+    margin: 0.5em;
+    display: inline;
+    list-style-type: none;
+    
+}
+
+nav li a{    
+    text-decoration: none;
+    color: black;
+}
+
+nav li.active:hover{
+    background-color: rgb(168, 214, 255);
+    padding: 20px;
+}
+
+.porthead {
+    font-family: 'Montserrat', sans-serif;
+    grid-area: porthead;
+    font-style: bold;
+    font-size: 50px;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio{
+    grid-area: port1;
+}
+.portfolio1 img{
+    width: 400px;
+    height: 300px;
+}
+
+.portfolio{
+    grid-area: port2;
+}
+.portfolio2 img{
+    width: 400px;
+    height: 300px;
+}
+
+main p2 {
+    grid-area: porttxt1;
+}
+main p3 {
+    grid-area: porttxt2;
+}
+
+
+footer{
+    position: relative;
+    margin: 2em;
+    width: 100%;
+    background-color: #4278f5;
+    grid-area: footer;
+}
+
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 130px 90px 200px auto;
+    grid-template-areas: "header header header header header"
+    "nav nav nav nav nav"
+    "porthead porthead porthead porthead porthead"
+    "welcome welcome welcome welcome welcome"
+    "porttxt1 porttxt1 porttxt1 port1 port1"
+    "port2 port2 porttxt2 porttxt2 porttxt2"
+    "footer footer footer footer footer"
+
+}
