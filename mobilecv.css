@@ -26,8 +26,8 @@ nav li{
     background-color: aliceblue;
     border: black, 10em;
     border-radius: 5em;
-    margin: 0.5em;
-    display: inline;
+    margin: 0.1em;
+    display: block;
     list-style-type: none;
     
 }
@@ -43,7 +43,7 @@ nav li.active:hover{
 }
 
 .cvheading{
-    font-size: xx-large;
+    font-size: 48px;
     text-align: center;
     
 }
