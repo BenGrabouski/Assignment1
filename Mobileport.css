@@ -1,0 +1,122 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(87, 90, 255);
+    padding: 5px;
+    text-align: center;
+    font-size: 25;
+    grid-area: header;
+}
+
+
+nav{
+    background-color: #4278f5;
+    padding: 20px;
+    grid-area: nav;
+    font-family: 'Montserrat', sans-serif;;
+    color: black;
+    text-align: center;
+}
+
+
+
+nav li{
+    font-family: 'Montserrat', sans-serif;;
+    padding: 15px;
+    width: 10em;
+    background-color: aliceblue;
+    border: black, 10em;
+    border-radius: 5em;
+    margin: 0.5em;
+    display: inline;
+    list-style-type: none;
+    
+}
+
+nav li a{    
+    text-decoration: none;
+    color: black;
+}
+
+nav li.active:hover{
+    background-color: rgb(168, 214, 255);
+    padding: 20px;
+}
+
+.porthead {
+    font-family: 'Montserrat', sans-serif;
+    grid-area: porthead;
+    font-style: bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    grid-area: main;
+}
+
+.welcome{
+    margin-bottom: 50px;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+.portfolio1{
+    grid-area: port1;
+    display: block;
+    float:left;
+    
+}
+.portfolio1 img{
+    width: 730px;
+    height: 300px;
+}
+
+.portfolio2{
+    grid-area: port2;
+    display: block;
+ 
+}
+.portfolio2 img{
+    width: 730px;
+    height: 300px;
+}
+
+main p2 {
+    margin-top: 350px;
+    grid-area: porttxt1;
+    display: block;
+    background-color:#4278f5;
+    width:100%
+
+}
+main p3 {
+    grid-area: porttxt2;
+    display: block;
+    background-color:#4278f5;
+    width:100%
+
+}
+
+
+footer {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    grid-area: footer;
+    background-color: #4278f5;
+}
+
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header header"
+    "nav nav nav nav nav"
+    "porthead porthead porthead porthead porthead"
+    "main main main main main"
+    "footer footer footer footer footer"
+
+}
