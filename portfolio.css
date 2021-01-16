@@ -46,60 +46,81 @@ nav li.active:hover{
     font-family: 'Montserrat', sans-serif;
     grid-area: porthead;
     font-style: bold;
-    font-size: 50px;
+    font-size: 48px;
+    text-align: center;
 }
 
 main {
     font-family: 'Montserrat', sans-serif;
+    grid-area: main;
+}
+
+.welcome{
+    margin-bottom: 50px;
+    font-size: x-large;
+    text-align: center;
+
 }
 
 .portfolio1{
     grid-area: port1;
     display: block;
+    float: right;
+    background-color:  #4278f5;
+
 }
 .portfolio1 img{
-    width: 400px;
+    width: 900px;
     height: 300px;
 }
 
 .portfolio2{
     grid-area: port2;
     display: block;
+    float:left;
 }
 .portfolio2 img{
-    width: 400px;
+    width: 902px;
     height: 300px;
 }
 
 main p2 {
     grid-area: porttxt1;
     display: block;
+    width:900px;
+    background-color:#4278f5;
+    background-size: 50% 300px;
+    padding-bottom: 220px;
+    border: 2px solid black;
 }
 main p3 {
     grid-area: porttxt2;
     display: block;
+    width:900px;
+    background-color:#4278f5;
+    padding-bottom: 220px;
+    border: 2px solid black;
+    float: right;
 }
 
 
-footer{
+footer {
     position: relative;
-    margin: 2em;
+    margin-top: 50px;
     width: 100%;
-    background-color: #4278f5;
     grid-area: footer;
+    background-color: #4278f5;
 }
 
 body{
     width: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 130px 90px 200px auto;
+    grid-template-rows: auto;
     grid-template-areas: "header header header header header"
     "nav nav nav nav nav"
     "porthead porthead porthead porthead porthead"
-    "welcome welcome welcome welcome welcome"
-    "porttxt1 porttxt1 porttxt1 port1 port1"
-    "port2 port2 porttxt2 porttxt2 porttxt2"
+    "main main main main main"
     "footer footer footer footer footer"
 
 }
