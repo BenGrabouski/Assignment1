@@ -64,5 +64,17 @@ body{
     "nav nav nav nav nav"
     "main main main main main"
     "logo logo logo logo logo"
+    "footer footer footer footer footer"
     ;
+}
+
+.push{
+    height:50px;
+}
+
+footer {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    grid-area: footer;
 }
