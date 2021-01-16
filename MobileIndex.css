@@ -50,6 +50,14 @@ nav li.active:hover{
     padding: 20px;
 }
 
+.mainhead {
+    font-family: 'Montserrat', sans-serif;
+    grid-area: main;
+    font-style: bold;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
 main {
     font-family: 'Montserrat', sans-serif;
     grid-area: main;
