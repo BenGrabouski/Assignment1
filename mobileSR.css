@@ -1,0 +1,149 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(87, 90, 255);
+    padding: 5px;
+    text-align: center;
+    font-size: 25;
+    grid-area: header;
+}
+
+
+nav{
+    background-color: #4278f5;
+    padding: 20px;
+    grid-area: nav;
+    font-family: 'Montserrat', sans-serif;;
+    color: black;
+    text-align: center;
+}
+
+
+
+nav li{
+    font-family: 'Montserrat', sans-serif;;
+    padding: 15px;
+    width: 10em;
+    background-color: aliceblue;
+    border: black, 10em;
+    border-radius: 5em;
+    margin: 0.1em;
+    display: block;
+    list-style-type: none;
+    
+}
+
+nav li a{    
+    text-decoration: none;
+    color: black;
+}
+
+nav li.active:hover{
+    background-color: rgb(168, 214, 255);
+    padding: 20px;
+}
+
+.contactheader{
+    font-family: 'Montserrat', sans-serif;;
+    font-style: bold;
+    font-size: 48px;
+    text-align: center;
+    grid-area: srhead;
+}
+
+main p{
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+main{
+    grid-area: main;
+}
+
+.blank1{
+    grid-area: blank1;
+    background-color: #4278f5;
+    display:none;
+}
+
+.blank2{
+    grid-area:blank2;
+    background-color: #4278f5;
+    display: none;
+}
+
+.navproblem{
+    float:left;
+    display:block;
+}
+
+.navproblem img{
+    width:480px;
+    height:600px;
+}
+
+.navsolution{
+    float:left;
+
+}
+
+.navsolution img{
+    width:480px;
+    height:600px;
+
+}
+
+.portfolioproblem{
+    float:left;
+}
+
+.portfolioproblem img{
+    width:480px;
+    height:281px;
+
+}
+
+.portfoliofix{
+    float:left;
+}
+
+.portfoliofix img{
+    width:480px;
+    height:281px;
+}
+
+.contactproblem{
+    float:left;
+}
+.contactproblem img{
+    width:480px;
+    height:184px;
+
+}
+
+.contactsolution{
+    float:left;
+}
+.contactsolution img{
+    width:480px;
+    height:184px;
+    
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    grid-area: footer;
+    background-color: #4278f5;
+}
+
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header header"
+    "nav nav nav nav nav"
+    "srhead srhead srhead srhead srhead"
+    "main main main main main"
+    "footer footer footer footer footer"
+}
