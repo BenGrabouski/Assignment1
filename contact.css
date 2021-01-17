@@ -4,14 +4,12 @@ header {
     padding: 5px;
     text-align: center;
     font-size: 25;
-    grid-area: header;
 }
 
 
 nav{
     background-color: #4278f5;
     padding: 20px;
-    grid-area: nav;
     font-family: 'Montserrat', sans-serif;;
     color: black;
     text-align: center;
