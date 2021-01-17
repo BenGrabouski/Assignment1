@@ -80,10 +80,10 @@ form li{
     height:250px;
  }
 
-footer{
-    position: absolute;
+ footer {
+    position: relative;
     width: 100%;
+    grid-area: footer;
     background-color: #4278f5;
-    bottom:0;
-    margin-left: -0.47em;
+    margin-top: 240px;
 }
