@@ -50,6 +50,14 @@ nav li.active:hover{
     padding: 20px;
 }
 
+.homepageheading{
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    grid-area: homeheading;
+    font-size: 48px;
+    text-align: center;
+}
+
 .mainhead {
     font-family: 'Montserrat', sans-serif;
     grid-area: main;
@@ -69,6 +77,7 @@ body{
     grid-template-rows: auto;
     grid-template-areas: "header header header header header"
     "nav nav nav nav nav"
+    "homeheading homeheading homeheading homeheading homeheading"
     "main main main logo logo";
 }
 

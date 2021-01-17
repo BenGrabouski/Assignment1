@@ -50,12 +50,12 @@ nav li.active:hover{
     padding: 20px;
 }
 
-.hometitle{
+.homepageheading{
     font-family: 'Montserrat', sans-serif;
     font-style: bold;
+    grid-area: homeheading;
     font-size: 48px;
     text-align: center;
-    grid-area: hometitle;
 }
 
 .mainhead {
@@ -78,7 +78,7 @@ body{
     grid-template-rows: auto;
     grid-template-areas: "header header header header header" 
     "nav nav nav nav nav"
-    "hometitle hometitle hometitle hometitle hometitle"
+    "homeheading homeheading homeheading homeheading homeheading"
     "main main main main main"
     "logo logo logo logo logo"
     "footer footer footer footer footer"
