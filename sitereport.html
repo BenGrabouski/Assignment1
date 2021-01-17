@@ -4,13 +4,30 @@
 <link rel="stylesheet" href="sitereport.css" />
 <link rel="stylesheet" href="MobileSR.css" media="screen and (max-width:800px)" />
 </head>
+</head>
 <body>
     <header>
-            <h1>Ben Grabouski</h1>
-    </header>
 
-    <nav>
-            <ul>
+        <a href="#main-menu" 
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="open main menu">
+        <span class="sr-only">Open main menu</span>
+            <span class="hb hb-bars" aria-hidden="true"></span>
+        </a>
+
+            <h1 class="logo">Ben Grabouski</h1>
+
+    <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a href="#main-menu-toggle" 
+        id="main-menu-close"
+        class="menu-close"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+            <span class="hb hb-close" aria-hidden="true"></span>
+         </a>
+         
+         <ul>
                
                 <li class="active"><a href="index.html"> Home </a></li>
               
@@ -24,6 +41,12 @@
               
             </ul>  
     </nav>
+    <a href="#main-menu-toggle" 
+    class="backdrop" 
+    tabindex="-1"
+    aria-hidden="true" hidden></a>
+
+</header>
 
     <section class="contactheader">
         <h2> SITE REPORT </h2>

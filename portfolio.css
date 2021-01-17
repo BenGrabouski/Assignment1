@@ -17,19 +17,13 @@ nav{
     text-align: center;
 }
 
-
-
 nav li{
     font-family: 'Montserrat', sans-serif;;
-    padding: 15px;
     width: 10em;
-    background-color: aliceblue;
-    border: black, 10em;
-    border-radius: 5em;
+    background-color: #4278f5;
     margin: 0.5em;
     display: inline;
     list-style-type: none;
-    
 }
 
 nav li a{    
@@ -40,6 +34,11 @@ nav li a{
 nav li.active:hover{
     background-color: rgb(168, 214, 255);
     padding: 20px;
+}
+@media screen and (min-width: 800px){
+    .menu-toggle, .menu-close{
+    display: none;
+    }
 }
 
 .porthead {

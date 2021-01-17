@@ -15,7 +15,6 @@ header {
 .uonfulllogo {
     display:inline;
 }
-
 nav{
     background-color: #4278f5;
     padding: 20px;
@@ -25,19 +24,13 @@ nav{
     text-align: center;
 }
 
-
-
 nav li{
     font-family: 'Montserrat', sans-serif;;
-    padding: 15px;
     width: 10em;
-    background-color: aliceblue;
-    border: black, 10em;
-    border-radius: 5em;
+    background-color: #4278f5;
     margin: 0.5em;
     display: inline;
     list-style-type: none;
-    
 }
 
 nav li a{    
@@ -48,6 +41,17 @@ nav li a{
 nav li.active:hover{
     background-color: rgb(168, 214, 255);
     padding: 20px;
+}
+@media screen and (min-width: 800px){
+    .menu-toggle, .menu-close{
+    display: none;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .uonfulllogo {
+        display:inline;
+    }
 }
 
 .homepageheading{
@@ -78,13 +82,16 @@ body{
     grid-template-areas: "header header header header header"
     "nav nav nav nav nav"
     "homeheading homeheading homeheading homeheading homeheading"
-    "main main main logo logo";
+    "main main main logo logo"
+    "footer footer footer footer footer";
 }
 
 footer{
-    position: absolute;
+    grid-area:footer;
+    position: relative;
     width: 100%;
     background-color: #4278f5;
     bottom:0;
     margin-left: -0.47em;
+    margin-top: 285px
 }

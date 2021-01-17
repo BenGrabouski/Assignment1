@@ -7,38 +7,111 @@ header {
 }
 
 
-nav{
-    background-color: #4278f5;
-    padding: 20px;
-    grid-area: nav;
-    font-family: 'Montserrat', sans-serif;;
-    color: black;
-    text-align: center;
-}
+.sr-only {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
 
+.menu-toggle {
+    content: '';
+     position: fixed;
+     width: 10%;
+     top: 0.3em;
+     left: 0px;
+     border-top: 0.2em solid black;
+    }
 
+.main-menu {
+    position: fixed;
+    display: none;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    transition: left 0.3s easeS;
+    z-index: 999;
+  }
 
-nav li{
-    font-family: 'Montserrat', sans-serif;;
-    padding: 15px;
-    width: 10em;
-    background-color: aliceblue;
-    border: black, 10em;
-    border-radius: 5em;
-    margin: 0.1em;
+  .main-menu ul {
+    background-color: rgb(87, 90, 255);
+  }
+
+  .main-menu a {
     display: block;
-    list-style-type: none;
-    
-}
-
-nav li a{    
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #fff;
     text-decoration: none;
-    color: black;
+    border-bottom: 1px solid #383838;
+  }
+
+  .main-menu li:first-child a {
+    border-top: 1px solid #383838;
+  }
+
+  .main-menu a:hover,
+.main-menu a:focus {
+  background: #333;
+  text-decoration: underline;
 }
 
-nav li.active:hover{
-    background-color: rgb(168, 214, 255);
-    padding: 20px;
+.main-menu .menu-close {
+    content: '';
+     position: fixed;
+     width: 5%;
+     top: 0.3em;
+     left: 0px;
+     border-top: 0.2em solid black;
+    }
+
+
+
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    color: #c00;
+  }
+
+  .main-menu:target,
+.main-menu[aria-expanded="true"] {
+  display: block;
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop{
+  position: fixed;
+  display: block;  
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
 }
 
 .contactheader{
